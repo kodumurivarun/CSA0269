@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+    int m, n, count = 0;
+    printf("Enter the values of m and n: ");
+    scanf("%d%d", &m, &n);
+    printf("All odd numbers: ");
+    for (int i = m+1; i < n; i++) {
+        if (i % 2 != 0) {
+            printf("%d ", i);
+        } else {
+            count++;
+        }
+    }
+    printf("\nAll even numbers: ");
+    for (int i = m+1; i < n; i++) {
+        if (i % 2 == 0) {
+            printf("%d ", i);
+        }
+    }
+    printf("\nCount of even numbers: %d", count);
+    return 0;
+}
